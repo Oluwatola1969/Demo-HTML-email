@@ -13,10 +13,10 @@
     }
 
     body{
-        font-family: "Roboto", sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
     }
-    img{width: 100%;}
-    table{width: 100%;}
+    img{border: 0;}
+    table{width: 100%; border-spacing: 0;}
     .wrapper{
         width: 100%;
         table-layout: fixed;
@@ -26,9 +26,80 @@
     .main{
         max-width: 600px;background-color: white;
         color: black; box-shadow: 0 0 25px rgba(0,0,0,0.2);
+        text-align: center;
     }
     .border{
         background-color: black;
+    }
+    .two-columns{
+        font-size: 0;
+        text-align: center;
+    }
+    .two-columns .column{
+        width: 100%;
+        max-width:300px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .logo{
+        width: 250px;
+    }
+    .social-media_links{
+        padding: 12px 0 12px 42px;
+    }
+
+    .social-link{
+        width: 38px;
+    }
+
+    .button{
+        text-decoration: none;
+        background-color: black;
+        color: white;
+        padding: 12px 20px;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+    h4{
+        font-size: 20px;
+        margin: 20px 0 15px ;
+    }
+    .three-columns{
+        font-size: 0;
+        padding: 35px 0 20px;
+    }
+
+    .three-columns .column{
+        max-width: 200px;
+        width: 100%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .three-columns .content{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .three-columns .content p{
+        text-align: left;
+    }
+    .three-columns .padding{
+        padding: 25px;
+    }
+    .two-columns{
+        display: inline-block;
+    }
+    .two-columns.last{
+        padding: 35px 0;
+    }
+    
+    .two-columns .padding{
+        padding: 20px;
+    }
+    
+    .two-columns .content{
+        text-align: left;
+        font-size: 15px;
+        line-height: 20px;
     }
 </style>
 
@@ -36,7 +107,7 @@
 
 <body>
     <center class="wrapper">
-        <table class="main" width= '50%'>
+        <table class="main" width= '100%'>
             <!-- border -->
             <tr>
                 <td class="border" width="100%" height="8px">
@@ -45,8 +116,230 @@
             </tr>
 <!-- logo, social -->
             <tr>
-                <td style="padding: 14px 0 4px;"></td>
+                <td style="padding: 14px 0 4px;">
+                    <table style="width: 100%;">
+                        <tr>
+                            <td class="two-columns">
+                                <table class="column left-columns">
+                                    <tr>
+                                        <td >
+                                            <a href="https://ibb.co/3W22vJv"><img src="https://i.ibb.co/hHbbcqc/logo.png" alt="logo" width="250" border="0"></a>
+                                            <!-- <a href="#"><img src="img/logo.png" alt="logo" width="250" class="logo" title="logo"></a> -->
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <table class="column right-column">
+                                    <tr>
+                                        <td class="social-media_links">
+                                            <!-- <a href="#"><img src="img/facebook.png" alt="facebook" class="social-link"></a> -->
+                                            <a href="https://imgbb.com/"><img src="https://i.ibb.co/w62W7SB/facebook.png" alt="facebook" width="38" border="0"></a>
+                                            <!-- <a href="#"><img src="img/instagram.png" alt="instagram" class="social-link"></a> -->
+                                            <a href="https://imgbb.com/"><img src="https://i.ibb.co/hfp9dcz/Instagram.png" alt="Instagram" border="0"></a>
+                                            <!-- <a href="#"><img src="img/linkedin.png" alt="linkedin" class="social-link"></a> -->
+                                            <a href="https://imgbb.com/"><img src="https://i.ibb.co/LkwDTFv/Linkedin.png" alt="Linkedin" border="0"></a>
+                                            <!-- <a href="#"><img src="img/youtube.png" alt="youtube" class="social-link"></a> -->
+                                            <a href="https://imgbb.com/"><img src="https://i.ibb.co/7N8yq9R/Youtube.png" alt="Youtube" border="0"></a>
+                                            <!-- <a href="#"><img src="img/twitter.png" alt="twitter" class="social-link"></a> -->
+                                            <a href="https://imgbb.com/"><img src="https://i.ibb.co/GJk4HbN/Twitter.png" alt="Twitter" border="0"></a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
             </tr>
+
+            <!-- Banner section -->
+            <tr>
+                <td class="banner">
+                    <!-- <a href="#"><img src="https://ibb.co/7vc2NhZ" width="600" style="max-width: 100%;" alt="banner"></a> -->
+                    <a href="https://ibb.co/7vc2NhZ"><img src="https://i.ibb.co/0qNhV56/banner.jpg" alt="banner" ></a>
+                </td>
+            </tr>
+
+            <!-- content section -->
+
+            <tr>
+                <td style="padding: 20px 15px 50px;">
+                    <table>
+                        <tr>
+                            <td>
+                                <h3 style="font-size: 28px;">HTML Email Template <span style="color: #c89800;">Course</span></h3>
+
+                                <p style="font-size: 15px; padding: 10px 0px 22px;">Responsive HTML Email temlates that you can build around. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti ipsum beatae corrupti debitis amet! Inventore natus vitae dolores dignissimos.</p>
+
+                                <a href="#" class="button">View Course</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+              <!-- border -->
+              <tr>
+                <td class="border" width="100%" height="2px">
+                    
+                </td>
+            </tr>
+
+            <!-- three-column section -->
+
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="three-columns" >
+                                <table class="column">
+                                    <tr>
+                                        <td class="padding">
+                                            <table class="content">
+                                                <tr>
+                                                    <td>
+                                                        <!-- <a href=""><img src="img/design.png" alt="" width="150"></a> -->
+                                                        <a href="#"><img width="150" src="https://i.ibb.co/MkHJkyQ/design.png" alt="design" border="0"></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding: 5px 0 10px;">
+                                                        <h4>Email Design</h4>
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos possimus ab reprehenderit.</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table class="column">
+                                    <tr>
+                                        <td class="padding">
+                                            <table class="content">
+                                                <tr>
+                                                    <td>
+                                                        <!-- <a href=""><img src="img/marketing.png" alt="" width="150"></a> -->
+                                                        <a href="https://imgbb.com/"><img  width="150" src="https://i.ibb.co/vxR33Lb/marketing.png" alt="marketing" border="0"></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding: 5px 0 10px;">
+                                                        <h4>Email marketing</h4>
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos possimus ab reprehenderit.</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table class="column">
+                                    <tr>
+                                        <td class="padding">
+                                            <table class="content">
+                                                <tr>
+                                                    <td>
+                                                        <!-- <a href=""><img src="img/development.png" alt="" width="150"></a> -->
+                                                        <a href="https://imgbb.com/"><img src="https://i.ibb.co/Dr8Zd5Z/Development.png" alt="Development" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>pics upload site</a><br />
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding: 5px 0 10px;">
+                                                        <h4>Development</h4>
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos possimus ab reprehenderit.</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+              <!-- border -->
+              <tr>
+                <td class="border" width="100%" height="2px">
+                    
+                </td>
+            </tr>
+
+            <!-- two-column section -->
+
+            <tr>
+                <td>
+                    <table >
+                        <tr>
+                            <td class="two-columns last">
+                                <table class="column">
+                                    <tr>
+                                        <td class="padding">
+                                           <table class="content">
+                                            <tr>
+                                                <td>
+                                                    <!-- <a href="#"><img src="img/palette.png" width="260px" alt=""></a> -->
+                                                    <a href="https://imgbb.com/"><img src="https://i.ibb.co/nmT8NzT/Palette.png" alt="Palette" border="0"></a>
+                                                </td>
+                                            </tr>
+                                           </table>
+                                        </td>
+                                    </tr>
+                              
+                                </table>
+                                <table class="column">
+                                    <tr>
+                                        <td class="padding">
+                                           <table class="content">
+                                            <tr>
+                                                <td>
+                                                    <h4>Create Custom Design</h4>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi consectetur maiores commodi!</p>
+                                                    <p style="padding-bottom:25px ;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                    <a href="#" class="button">HTML Email Course</a>
+                                                </td>
+                                            </tr>
+                                           </table>
+                                        </td>
+                                    </t>
+                                </table>
+                               
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- footer -->
+
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td style="padding: 35px 25px; background-color: black; color: white;">
+                                <!-- <a href="#"><img src="img/logo.png" width="200px" alt=""></a> -->
+                                <a href="https://ibb.co/3W22vJv"><img src="https://i.ibb.co/hHbbcqc/logo.png" alt="logo" width="250" border="0"></a>
+                                <p style="padding: 8px 0 3px;">HTML Email Template</p>
+                                <p style="padding-bottom: 13px;">Talohan street, frietal.</p>
+                                <!-- <a href="#"><img src="img/facebook.png" alt="facebook" class="social-link"></a> -->
+                                <a href="https://imgbb.com/"><img src="https://i.ibb.co/w62W7SB/facebook.png" alt="facebook" width="38" border="0"></a>
+                                <!-- <a href="#"><img src="img/instagram.png" alt="instagram" class="social-link"></a> -->
+                                <a href="https://imgbb.com/"><img src="https://i.ibb.co/hfp9dcz/Instagram.png" alt="Instagram" border="0"></a>
+                                <!-- <a href="#"><img src="img/linkedin.png" alt="linkedin" class="social-link"></a> -->
+                                <a href="https://imgbb.com/"><img src="https://i.ibb.co/LkwDTFv/Linkedin.png" alt="Linkedin" border="0"></a>
+                                <!-- <a href="#"><img src="img/youtube.png" alt="youtube" class="social-link"></a> -->
+                                <a href="https://imgbb.com/"><img src="https://i.ibb.co/7N8yq9R/Youtube.png" alt="Youtube" border="0"></a>
+                                <!-- <a href="#"><img src="img/twitter.png" alt="twitter" class="social-link"></a> -->
+                                <a href="https://imgbb.com/"><img src="https://i.ibb.co/GJk4HbN/Twitter.png" alt="Twitter" border="0"></a>
+                                <a style="text-decoration: none; color: white;" href="#">
+                                    <p style="padding-top: 15px;">Subscribe</p>
+                                </a>
+                            </td>
+                        </tr> 
+                    </table>
+                </td>
+            </tr>
+
         </table>
     </center>
 </body>
